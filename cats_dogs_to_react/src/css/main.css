@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+section.header {
+  position: fixed;
+  width: 100%;
+  background: #F8F9FA;
+  z-index: 10;
+}
+
+section.header img.logo {
+  height: 50px;
+  width: 60px;
+}
+
+section.header .btn_reg {
+  background: #D45500;
+  color: #F8F9FA;
+}
+
+section.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.main .reg_card {
+  margin: 0 auto;
+  margin-top: 120px;
+  width: 60%;
+}
+
+section.main .sidebar {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  margin-top: 78px;
+  width: 260px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #F8F9FA;
+  /* Black */
+  overflow-x: scroll;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.main .sidebar button.sb_close {
+  margin-bottom: 15px;
+  border: none;
+  color: #D45500;
+  background: #F8F9FA;
+  display: none;
+  border-radius: 3px;
+}
+
+section.main .sidebar a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #D45500;
+  display: block;
+  margin-bottom: 15px;
+}
+
+section.main .sidebar a:hover {
+  color: #5e5d5d;
+}
+
+section.main .sidebar p {
+  margin-top: 15px;
+}
+
+section.main .main_content {
+  margin-top: 75px;
+  width: calc(100% - 260px);
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.main .main_content button.sidebar_toggler {
+  margin-bottom: 15px;
+  border: none;
+  color: #D45500;
+  background: #F8F9FA;
+  display: none;
+  border-radius: 3px;
+  margin-top: 5px;
+  position: fixed;
+  margin-left: -25px;
+}
+
+section.main .main_content .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+  background: #F8F9FA;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 95%;
+  border-radius: 9px;
+}
+
+section.main .main_content .post .post_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 500px;
+}
+
+section.main .main_content .post .post_top img {
+  height: 100%;
+}
+
+section.main .main_content .post .post_bot {
+  padding: 0px 15px;
+}
+
+section.main .main_content .post .post_bot .post_bot_heading {
+  margin-bottom: 20px;
+}
+
+section.main .main_content .post .post_bot .post_bot_heading span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section.main .main_content .post .post_bot .post_bot_description span {
+  color: #8a8a8a;
+}
+
+section.main .main_content .post .post_bot .post_bot_common {
+  margin-top: 20px;
+}
+
+section.main .main_content .post .post_bot .post_bot_common .post_bot_common_item {
+  margin-top: 5px;
+}
+
+section.main .main_content .post .post_bot .post_bot_common .post_bot_common_item span {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+section.main .main_content .post .post_bot .post_bot_btnholder {
+  margin-top: 20px;
+}
+
+section.main .main_content .post .post_bot .post_bot_btnholder button {
+  color: #D45500;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section.main .main_content .post .post_bot .post_bot_btnholder button:hover {
+  color: #fff;
+}
+
+section.main .main_content .post_single {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+section.main .main_content .post_single .single_top {
+  margin-bottom: 50px;
+}
+
+section.main .main_content .post_single .single_imgs {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.cabinet_card {
+  margin-top: 3px;
+}
+
+.card_cab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card_cab .cab_avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.card_cab .cab_desc {
+  margin-left: 20px;
+}
+
+.card_cab .cab_ads_item {
+  margin-top: 10px;
+}
+
+.sidebar_active {
+  margin-left: 0px !important;
+}
+
+@media screen and (max-width: 1120px) {
+  section.main .sidebar {
+    margin-left: -260px;
+  }
+  section.main .main_content {
+    width: 100%;
+  }
+  section.main .sidebar button.sb_close {
+    display: block;
+  }
+  section.main .main_content button.sidebar_toggler {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section.main .main_content .post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.main .main_content .post .post_top {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  section.main .main_content .post {
+    width: 100%;
+  }
+  section.main .main_content .post .post_top {
+    height: auto;
+  }
+  section.main .main_content .post .post_top img {
+    width: 100%;
+  }
+  section.main .main_content button.sidebar_toggler {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

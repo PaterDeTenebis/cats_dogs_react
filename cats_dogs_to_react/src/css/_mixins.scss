@@ -1,0 +1,8 @@
+@mixin Toggler {
+    margin-bottom: 15px;
+    border: none;
+    color: $Orange;
+    background: $MainBG;
+    display: none;
+    border-radius: 3px;
+}

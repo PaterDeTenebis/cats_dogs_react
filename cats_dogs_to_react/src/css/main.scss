@@ -1,0 +1,177 @@
+@import"./variables";
+@import"./mixins";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.header{
+    position: fixed;
+    width: 100%;
+    background: $MainBG;
+    z-index: 10;
+    img.logo {
+        height: 50px;
+        width: 60px;
+    }
+    .btn_reg {
+        background: $Orange;
+        color: $MainBG;
+    }
+}
+
+section.main {
+    display: flex;
+    .reg_card {
+        margin: 0 auto;
+        margin-top: 120px;
+        width: 60%;
+    }
+    .sidebar {
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        margin-top: 78px;
+        width: 260px; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: $MainBG; /* Black */
+        overflow-x: scroll; /* Disable horizontal scroll */
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 15px;
+        transition: .3s;
+        button.sb_close {
+            @include Toggler();
+        }
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #D45500;
+            display: block;
+            margin-bottom: 15px;
+            &:hover {
+                color: #5e5d5d;
+            }
+        }
+        p {
+            margin-top: 15px;
+        }
+    }
+    .main_content {
+        margin-top: 75px;
+        width: calc(100% - 260px);
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button.sidebar_toggler {
+            @include Toggler();
+            margin-top: 5px;
+            position: fixed;
+            margin-left: -25px;
+        }
+        .post {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            background: $MainBG;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 95%;
+            border-radius: 9px;
+            .post_top {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                height: 500px;
+                img {
+                    height: 100%;
+                }
+            }
+            .post_bot {
+                padding: 0px 15px;
+                .post_bot_heading {
+                    margin-bottom: 20px;
+                    span {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+                .post_bot_description {
+                    span {
+                        color: rgb(138, 138, 138);
+                    }
+                }
+                .post_bot_common {
+                    margin-top: 20px;
+                    .post_bot_common_item {
+                        margin-top: 5px;
+                        span {
+                            font-size: 16px;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .post_bot_btnholder {
+                    margin-top: 20px;
+                    button {
+                        color: $Orange;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .post_single {
+            flex-direction: column;
+            margin-bottom: 20px;
+            .single_top {
+                margin-bottom: 50px;
+            }
+            .single_imgs {
+                max-width: 500px;
+                max-height: 500px;
+            }
+        }
+    }
+}
+.cabinet_card {
+    margin-top: 3px;
+}
+.card_cab {
+    display: flex;
+    
+    .cab_avatar {
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+    }
+    .cab_desc {
+        margin-left: 20px;
+    }
+    .cab_ads_item {
+        margin-top: 10px;
+    }
+}
+
+.sidebar_active {
+    margin-left: 0px!important;
+}
+
+@import"./mediaqueries";
