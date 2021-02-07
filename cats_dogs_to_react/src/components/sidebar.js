@@ -1,9 +1,19 @@
 import React from 'react';
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+
+import $ from 'jquery';
+
 function Sidebar () {
+  $('.sb_close').click(function(){
+    $('.sidebar').removeClass('sidebar_active');
+  });
+
     return (
         <div className="sidebar">
-          <button className="sb_close"><i className="fas fa-chevron-left"></i></button>
+          <button className="sb_close"><FontAwesomeIcon icon={faChevronLeft} /></button>
             <a href="#">Рубрика: Ищу дом</a>
             <a href="#">Рубрика: Найден питомец</a>
             <a href="#">Рубрика: Пропал питомец</a>

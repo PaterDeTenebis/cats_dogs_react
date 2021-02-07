@@ -12,7 +12,7 @@ import Content from './components/content';
 
 function App() {
   return (
-    <div classNameName="App">
+    <div className="App">
       <Header />
     <section className="main">
         <Sidebar />
